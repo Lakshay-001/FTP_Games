@@ -15,7 +15,7 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/games', options)
 .then(data => {
 loader.style.display = "none"
 
-data.slice(0,40).forEach(game => {
+data.slice(0,400).forEach(game => {
 const card = document.createElement("div")
 card.className = "card"
 
